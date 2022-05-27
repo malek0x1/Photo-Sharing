@@ -33,7 +33,7 @@ function drawUI(array) {
 }
 
 const redirect = () => {
-  location.href = "/upload.html";
+  location.href = "upload.html";
 };
 
 search.addEventListener("keyup", searchImage);
