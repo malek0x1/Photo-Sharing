@@ -1,7 +1,7 @@
 var db_user = localStorage.getItem("username");
 var db_pwd = localStorage.getItem("password");
 if (!db_user && !db_pwd) {
-  window.location = "/login.html";
+  window.location = "login.html";
 }
 
 var form = document.querySelector("form");
@@ -35,7 +35,7 @@ function func() {
     var new_data = [{ credit: credit, keywords: desc, image: img_b64 }, ...old];
 
     localStorage.setItem("images", JSON.stringify(new_data));
-    location.href = "/";
+    location.href = "index.html";
   };
 }
 
@@ -44,7 +44,7 @@ function isLoggedin() {
   if (user) {
     document.querySelectorAll(".upload-header li")[0].innerHTML = user;
   } else {
-    window.location = "/login.html";
+    window.location = "login.html";
   }
 }
 
