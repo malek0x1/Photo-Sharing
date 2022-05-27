@@ -3,7 +3,7 @@ var search = document.querySelector("#search");
 
 if (!localStorage.getItem("images")) {
   var xhttp = new XMLHttpRequest();
-  xhttp.open("GET", "/data.json", false);
+  xhttp.open("GET", "data.json", false);
   xhttp.send();
 
   var arr = JSON.parse(xhttp.responseText);
