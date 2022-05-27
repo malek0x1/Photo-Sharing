@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <h2>MyLogo</h2>
+
+          <div class="rightnav">
+            <ul>
+              <li id="search-li">
+                <input type="text" placeholder="search" id="search" />
+              </li>
+              <li style="display: none; font-weight: 800" id="showme">User</li>
+
+              <li>
+                <button
+                  id="btn-top-right"
+                  type="button"
+                  onclick="window.location='/login.html';"
+                >
+                  Sign In
+                </button>
+              </li>
+              <li>
+                <button
+                  id="btn-top-right"
+                  type="button"
+                  onclick="window.location='/signup.html';"
+                >
+                  Join
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="wrapper"></div>
+      </div>
+    </section>
+
+    <div class="plus" onclick="redirect()">
+      <i class="fa fa-plus"></i>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

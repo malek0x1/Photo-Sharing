@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="upload-header">
+          <h2>MyLogo</h2>
+          <li style="font-weight: 800" id="showme"></li>
+        </div>
+      </div>
+    </header>
+
+    <form action="#">
+      <div class="form">
+        <h2>Upload Image</h2>
+
+        <span id="" style="padding-left: 15px">
+          Image Credits :&nbsp;
+          <input
+            required
+            type="text"
+            id="credit"
+            placeholder="Malek Mneimneh"
+          />
+        </span>
+
+        <span id="span1-2">
+          Image Keywords :
+          <input required type="text" id="desc" placeholder="car,apple,green" />
+        </span>
+
+        <span id="span2">
+          Upload An Image
+          <input accept="image/*" required id="upload" type="file" />
+        </span>
+
+        <button id="submit">Upload</button>
+      </div>
+    </form>
+
+    <script src="assets/js/upload.js"></script>
+  </body>
+</html>

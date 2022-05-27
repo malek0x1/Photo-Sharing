@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+.container {
+  width: 90%;
+  margin: auto;
+  margin-top: 15px;
+}
+
+header {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eee;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-content ul li {
+  display: inline-block;
+}
+.header-content input[type="text"] {
+  margin-right: 20px;
+  background-color: #eee;
+  border: none;
+  outline: none;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.header-content button {
+  padding: 5px;
+  background-color: #000;
+  color: white;
+  border: none;
+}
+section .wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+section .wrapper .box {
+  max-height: 400px;
+}
+
+#btn-top-right {
+  cursor: pointer;
+}
+section .wrapper .box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  /* object-fit: cover; */
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  flex-direction: column;
+}
+
+.form span:first-of-type {
+  margin-top: 40px;
+}
+
+#span1-2 {
+  margin-top: 10px;
+}
+#span2 {
+  margin-top: 12px;
+  margin-right: -40px;
+}
+
+.form span > input[type="text"],
+.form span > input[type="password"] {
+  outline: none;
+  border: none;
+  background-color: #eee;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.form button {
+  margin-top: 10px;
+  border: none;
+  background-color: #000;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+}
+.plus {
+  background-color: #000;
+  color: white;
+  position: fixed;
+  border-radius: 50%;
+  width: 20px;
+  padding: 25px;
+  right: 35px;
+  bottom: 35px;
+  cursor: pointer;
+  height: 40px;
+}
+
+.plus i {
+  position: absolute;
+  right: 50%;
+  left: 38%;
+  top: 38%;
+}
+
+.upload-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 750px) {
+  .header-content input[type="text"] {
+    margin-right: -90px;
+    background-color: #eee;
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 8px;
+    width: 100%;
+  }
+
+  .header-content #search-li {
+    margin-right: 15px;
+    /* width: 50%; */
+  }
+
+  .header-content {
+    justify-content: space-evenly;
+  }
+}
