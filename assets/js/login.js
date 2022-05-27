@@ -11,7 +11,7 @@ class Login {
     var db_pwd = localStorage.getItem("password");
     if (user === db_user && pwd === db_pwd) {
       setTimeout(() => {
-        window.location = "/";
+        window.location = "index.html";
       }, 1000);
     } else {
       alert("Wrong");
