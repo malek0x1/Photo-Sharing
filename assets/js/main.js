@@ -18,7 +18,7 @@ function isLoggedin() {
     document.querySelectorAll("li button")[0].style.display = "none";
     document.querySelectorAll("li button")[1].style.display = "none";
     document.querySelector("#showme").style.display = "";
-    document.querySelector("#showme").innerHTML = user;
+    document.querySelector("#showme").innerHTML = "Hello " +user;
   }
 }
 
@@ -28,7 +28,7 @@ drawUI(data);
 function drawUI(array) {
   boxDom.innerHTML = "";
   array.forEach((element) => {
-    boxDom.innerHTML += `<div class="box"> <img src="${element.image}" alt="${element.keywords}" credit="${element.credit}" srcset=""></div>`;
+    boxDom.innerHTML += `<div class="box"> <img src="${element.image}" style="max-width:300px;max-height:300px"  alt="${element.keywords}" credit="${element.credit}" srcset=""></div>`;
   });
 }
 
